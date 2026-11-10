@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "dependencies": {
+    "capstone": {
+      "version": "5.0.7",
+      "url": "https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.7.zip",
+      "sha256": "46286641631f730f8626cdaf495a3e6959a4a80643b7f62459570f341c75b2d5",
+      "kind": "zip",
+      "directory": "capstone-5.0.7",
+      "required": [
+        "cs.c",
+        "include/capstone/capstone.h",
+        "arch/X86/X86Disassembler.c"
+      ]
+    },
+    "json": {
+      "version": "3.12.0",
+      "url": "https://raw.githubusercontent.com/nlohmann/json/v3.12.0/single_include/nlohmann/json.hpp",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+      "kind": "file",
+      "file": "nlohmann/json.hpp"
+    },
+    "toolchain": {
+      "version": "20261104",
+      "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20261104/llvm-mingw-20261104-ucrt-x86_64.zip",
+      "sha256": "552191b5754c49a5a20723276a6fc56541ea1922c4c50b7b669022333fc1b40f",
+      "kind": "zip",
+      "directory": "llvm-mingw-20261104-ucrt-x86_64",
+      "required": [
+        "bin/x86_64-w64-mingw32-clang.exe",
+        "bin/x86_64-w64-mingw32-clang++.exe",
+        "bin/llvm-ar.exe",
+        "bin/x86_64-w64-mingw32-windres.exe"
+      ]
+    }
+  }
+}
